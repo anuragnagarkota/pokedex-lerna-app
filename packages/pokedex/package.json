@@ -1,0 +1,27 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "next -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001"
+  },
+  "keywords": [],
+  "author": "Anurag Nagar",
+  "license": "ISC",
+  "dependencies": {
+    "@mui/x-data-grid": "^5.17.24",
+    "@reduxjs/toolkit": "^1.9.3",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "components": "^1.0.0",
+    "next-redux-wrapper": "^8.1.0",
+    "react-redux": "^8.0.5",
+    "utils": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/next": "^9.0.0"
+  }
+}

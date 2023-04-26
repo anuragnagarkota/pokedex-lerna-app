@@ -1,0 +1,9 @@
+node_modules/
+lerna-debug.log
+npm-debug.log
+packages/*/package-lock.json
+packages/*/node_modules
+packages/*/dist
+packages/*/build
+packages/*/.next
+package-lock.json

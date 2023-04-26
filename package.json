@@ -1,0 +1,20 @@
+{
+  "name": "root",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "npm install && lerna bootstrap ",
+    "package:pokedex": "lerna run --scope pokedex --stream dev",
+    "start": "run-p --print-label package:*",
+    "build": "lerna run --scope components --stream build && lerna run --scope utils --stream build && lerna run --scope pokedex --stream build",
+    "lerna-dockerize": "lerna-dockerize --template-dockerfile-name Dockerfile.template"
+  },
+  "devDependencies": {
+    "lerna-dockerize": "^1.0.6",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.5",
+    "react": "^18.2.0"
+  }
+}
