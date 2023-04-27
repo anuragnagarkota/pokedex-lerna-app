@@ -3,6 +3,7 @@ const style = {
   width: "100%",
   maxWidth: 400,
   fontFamily: "Arial",
+  "border-collapse":"collapse"
 };
 const styleDiv = {
   maxWidth: 400,
