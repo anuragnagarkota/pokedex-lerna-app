@@ -16,6 +16,7 @@ const btnStyle = {
   border: 0,
   padding: 10,
   cursor: "pointer",
+  fontWeight:500
 };
 const Pokemon: React.FC<any> = () => {
   const router = useRouter();
@@ -23,15 +24,16 @@ const Pokemon: React.FC<any> = () => {
 
   return (
     <div>
-      {obj && <PokemonCard {...obj} />} <br />
       <button
         style={btnStyle}
         type="button"
         id="back_button"
         onClick={() => router.back()}
       >
-        Back
+        &larr; Back
       </button>
+      {obj && <PokemonCard {...obj} />} <br />
+      
     </div>
   );
 };
