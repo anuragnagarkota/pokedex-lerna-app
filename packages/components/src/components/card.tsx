@@ -2,7 +2,7 @@ import * as React from "react";
 const style = {
   width: "100%",
   maxWidth: 400,
-  fontFamily: "Arial"
+  fontFamily: "Arial",
 };
 const styleDiv = {
   maxWidth: 400,
@@ -18,15 +18,14 @@ const styleLink = {
   color: "#fff",
   padding: 5,
   textDecoration: "none",
-paddingLeft:20,
-paddingRight:20
+  paddingLeft: 20,
+  paddingRight: 20,
 };
 export const PokemonCard: React.FC<any> = ({
   name,
   height,
   weight,
   base_experience,
-  location_area_encounters,
 }) => {
   return (
     <center>
@@ -51,18 +50,6 @@ export const PokemonCard: React.FC<any> = ({
             <tr>
               <th>Base Experience</th>
               <td>{base_experience}</td>
-            </tr>
-            <tr>
-              <th>Location area encounters</th>
-              <td>
-                <a
-                  target="_blank"
-                  style={styleLink}
-                  href={`${location_area_encounters}`}
-                >
-                  View
-                </a>
-              </td>
             </tr>
           </tbody>
         </table>

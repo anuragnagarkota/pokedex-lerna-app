@@ -8,14 +8,12 @@ interface InterfacePokemonDetails {
   height: number;
   weight: number;
   base_experience: number;
-  location_area_encounters: string;
 }
 const initialState = {
   name: "",
   height: 0,
   weight: 0,
   base_experience: 0,
-  location_area_encounters: "",
 };
 export const fetchDetailsName = createAsyncThunk(
   "user/details",
@@ -49,8 +47,6 @@ export const pokemonDetailsSlice = createSlice({
         state.height = action.payload.height;
         state.weight = action.payload.weight;
         state.base_experience = action.payload.base_experience;
-        state.location_area_encounters =
-          action.payload.location_area_encounters;
       }
     );
   },
