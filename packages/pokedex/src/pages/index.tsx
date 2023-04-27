@@ -4,7 +4,7 @@ import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import Router from "next/router";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchPokemonData } from "../store/pokemonSlice";
-import { pokemonState, setCurrentPage } from "../store/pokemonSlice";
+import { pokemonState } from "../store/pokemonSlice";
 import { AppStore, ReduxWrapper } from "../store/store";
 const PageSize = 10;
 export default () => {

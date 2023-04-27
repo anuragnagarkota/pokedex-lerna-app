@@ -22,7 +22,6 @@ export const fetchDetailsName = createAsyncThunk(
       const obj: any = await fetchPokemonById(id);
       return obj;
     } catch (error_: unknown) {
-      console.log(error_);
       throw new Error(error_ as string);
     }
   }
