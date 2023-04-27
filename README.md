@@ -17,7 +17,7 @@ $ git clone https://github.com/anuragnagarkota/pokedex-lerna-app
 // Install the required npm modules
 $ npm run bootstrap
 
-//build the packages
+// build the packages
 $ npm run build
 ```
 
@@ -42,15 +42,8 @@ $ docker build .
 $ docker run -d -p <EXPOSED PORT>:<CONTAINER PORT> <imageId>
 ```
 
-#### Test
+#### Testing
 
 ```bash
 $ npm run test
-```
-
-For testing purposes we have used [Jest](https://facebook.github.io/jest/).
-
-```bash
-# To execute test cases
-$ npm run test-pokedex
 ```
