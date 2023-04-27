@@ -18,7 +18,11 @@ export const fetchPokemon = async ({
 };
 
 export const fetchPokemonById = async (id: string = "") => {
-  const response = await fetch(`${baseUrl}/${id}`);
-  const data = await response.json();
-  return data;
+  try {
+    const response = await fetch(`${baseUrl}/${id}`);
+    const data = await response.json();
+    return data;
+  } catch (e) {
+    throw new Error(e);
+  }
 };

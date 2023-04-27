@@ -1,1 +1,1 @@
-export { fetchPokemon, fetchPokemonById } from "./fetch-pokemon";
+export { fetchPokemon, fetchPokemonById } from "./fetchPokemon";

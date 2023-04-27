@@ -14,7 +14,8 @@ export default () => {
   const CustomPagination = () => {
     return (
       <Pagination
-        variant="outlined"
+        variant="text"
+        color="primary"
         shape="rounded"
         data-testid="pagination"
         count={Math.ceil(pokemonCount / PageSize)}
@@ -34,7 +35,7 @@ export default () => {
   ];
   return (
     <div>
-      <h2>PokeDex</h2>
+      <h2 style={{ fontFamily:'Arial',background: "#eee", padding: 10 }}>PokeDex</h2>
 
       <DataGrid
         rowHeight={40}

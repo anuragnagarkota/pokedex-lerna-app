@@ -10,6 +10,13 @@ import { PokemonData } from "../../store/pokemonSlice";
 import { ReduxWrapper } from "../../store/store";
 import { GetStaticPaths } from "next";
 import { useRouter } from "next/router";
+const btnStyle = {
+  background: "pink",
+  color: "#000",
+  border: 0,
+  padding: 10,
+  cursor: "pointer",
+};
 const Pokemon: React.FC<any> = () => {
   const router = useRouter();
   const obj = useSelector(pokemonDetailsState);
@@ -17,7 +24,12 @@ const Pokemon: React.FC<any> = () => {
   return (
     <div>
       {obj && <PokemonCard {...obj} />} <br />
-      <button type="button" onClick={() => router.back()}>
+      <button
+        style={btnStyle}
+        type="button"
+        id="back_button"
+        onClick={() => router.back()}
+      >
         Back
       </button>
     </div>
