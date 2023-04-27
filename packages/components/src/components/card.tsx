@@ -2,8 +2,7 @@ import * as React from "react";
 const style = {
   width: "100%",
   maxWidth: 400,
-  fontFamily: "Arial",
-  "border-collapse": "collapse",
+  fontFamily: "Arial"
 };
 const styleDiv = {
   maxWidth: 400,
@@ -33,7 +32,7 @@ export const PokemonCard: React.FC<any> = ({
     <center>
       <div style={styleDiv}>
         <h2 style={{ fontFamily: "Arial", background: "#eee", padding: 10 }}>
-          Viewing details of {name}
+          View detail
         </h2>
         <table border={1} cellPadding={8} style={style}>
           <tbody>

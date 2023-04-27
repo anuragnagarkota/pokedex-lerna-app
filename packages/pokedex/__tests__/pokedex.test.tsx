@@ -2,8 +2,6 @@ import "@testing-library/jest-dom";
 import { queryByAttribute, render, screen } from "@testing-library/react";
 
 import { PokemonCard } from "components";
-const getById = queryByAttribute.bind(null, "id");
-const mockData = { name: "anurag", height: 100, weight: 20 };
 
 const obj = { name: "pokemon", height: 10, weight: 20 };
 it("should render", () => {
